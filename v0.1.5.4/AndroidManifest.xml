@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jackson_siro.mfunshareshop"
+    android:versionCode="5"
+    android:versionName="0.1.5.4" >
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="21" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+
+    <supports-screens android:largeScreens="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <receiver
+            android:name=".tools.IncomingMessage"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.BROADCAST_SMS" >
+            <intent-filter android:priority="2147483647" >
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".AaSplash"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Cards"
+            android:label="@string/activity_mfsslist"
+            android:parentActivityName=".BaCategoryList" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jackson_siro.mfunshareshop.CardList" />
+        </activity>
+        <activity
+            android:name=".SetApp"
+            android:label="@string/activity_setapp"
+            android:parentActivityName=".BaCategoryList" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jackson_siro.mfunshareshop.CardList" />
+        </activity>
+        <activity
+            android:name=".Settings"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".SetApp" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jackson_siro.mfunshareshop.SetApp" />
+        </activity>
+        <activity
+            android:name=".Settings_I"
+            android:label="@string/activity_disppref"
+            android:parentActivityName=".SetApp" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jackson_siro.mfunshareshop.SetApp" />
+        </activity>
+        <activity
+            android:name=".SignIn"
+            android:label="@string/title_activity_sign_in"
+            android:parentActivityName=".Settings_I" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jackson_siro.mfunshareshop.Settings_I" />
+        </activity>
+        <activity
+            android:name=".SignUp"
+            android:label="@string/title_activity_sign_up"
+            android:parentActivityName=".Settings_I" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jackson_siro.mfunshareshop.Settings_I" />
+        </activity>
+        <activity
+            android:name=".BaCategoryList"
+            android:label="@string/activity_category" >
+        </activity>
+        <activity
+            android:name=".BbCategoryView"
+            android:label="@string/activity_category_view"
+            android:parentActivityName=".BaCategoryList" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jackson_siro.mfunshareshop.BaCategoryList" />
+        </activity>
+
+        <service android:name=".alarm.SchedulingService" />
+
+        <activity
+            android:name=".BcCardView"
+            android:label="@string/activity_card_view"
+            android:parentActivityName=".BbCategoryView" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jackson_siro.mfunshareshop.BbCategoryView" />
+        </activity>
+        <activity
+            android:name=".BdCardMaker"
+            android:label="@string/title_activity_card_maker"
+            android:parentActivityName=".BcCardView" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jackson_siro.mfunshareshop.BcCardView" />
+        </activity>
+        <activity
+            android:name=".CardEditor"
+            android:label="@string/title_activity_card_maker"
+            android:parentActivityName=".BcCardView" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jackson_siro.mfunshareshop.BcCardView" />
+        </activity>
+        <activity
+            android:name=".UserProfile"
+            android:label="@string/title_activity_user_profile"
+            android:parentActivityName="..BaCategoryList" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jackson_siro.mfunshareshop.BaCategoryList" />
+        </activity>
+        <activity
+            android:name=".UserPayment"
+            android:label="@string/title_activity_user_payment" >
+        </activity>
+    </application>
+
+</manifest>
