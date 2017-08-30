@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.jackson_siro.mfunshareshop.MainActivity" >
+    
+    <item android:id="@+id/menu_refresh"
+        android:title="@string/menu_refresh"
+        android:icon="@drawable/ic_action_refresh"
+        app:showAsAction="always" />
+    
+    <item android:id="@+id/menu_settings"
+        android:title="@string/menu_settings"
+        android:icon="@drawable/ic_user"
+        app:showAsAction="always" />
+    
+</menu>

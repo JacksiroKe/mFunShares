@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">M FunShare Shop</string>
+    <string name="welcome_txt">Welcome to mFunShare Shop</string>
+    <string name="alternate_title">An alternate title that is long</string>
+    <string name="toggle_title">Toggle title</string>
+    <string name="menu_refresh">Refresh</string>
+    <string name="menu_search">Search</string>
+    <string name="menu_share">Share</string>
+    <string name="search_instructions">Use the search box in the Action Bar to look up a card</string>
+
+    <plurals name="search_results">
+        <item quantity="one">%1$d card found with \"%2$s\"</item>
+        <item quantity="other">%1$d cards found with \"%2$s\"</item>
+    </plurals>
+
+    <string name="no_results">No cards found with \"%s\"</string>
+    <string name="daily_bread">Daily Bread: </string>
+    <string name="set_font_size">Card Font Size: </string>
+    <string name="set_card_preview">Preview of the Card text</string>
+    <string name="set_settheme">Set Theme: </string>
+    <string name="refre_shing">Refreshing</string>
+    <string name="activity_setapp">App Preferences</string>
+    <string name="activity_userpref">User Settings</string>
+    <string name="activity_disppref">Display Settings</string>
+    <string name="activity_card">M FunShare Shop</string>
+    <string name="activity_mfsslist">Latest Cards of the Day</string>
+
+    <string-array name="SetAppList">
+        <item>User Preferences</item>
+        <item>Display Preferences</item>
+    </string-array>
+    <string-array name="SetAppListDesc">
+        <item>Personal Preferences</item>
+        <item>How the app will displays</item>
+    </string-array>
+
+    <string name="intro_message">Welcome to <b>Scheduler</b>!
+        This sample demonstrates how you can schedule an alarm that causes a service to
+        be started. This is useful when you want to schedule alarms that initiate
+        long-running operations. Click START ALARM to activate an alarm to check
+        the Google home page for a custom doodle once a day. If the app finds a doodle,
+        it posts a \"Doodle Alert\" as a notification. Click CANCEL ALARM to cancel the 
+        alarm. Once the alarm is active, it automatically restarts when the device is 
+        rebooted.</string>
+    <string name="start_text">Start Alarm</string>
+    <string name="cancel_text">Cancel Alarm</string>
+    <string name="mfss_alert">New Card of the Day</string>
+    <string name="mfss_found">There is a new Card today!!</string>
+    <string name="no_mfss">No Card found today.</string>
+    <string name="connection_error">Connection error.</string>
+    <string name="title_activity_card_view">CardView</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="activity_category">M FunShare Shop</string>
+    <string name="activity_category_view">Cards @ M FunShare Shop</string>
+    <string name="activity_card_view">Card View</string>
+    <string name="jackson_siro">© Jackson Siro</string>
+    <string name="title_activity_card_maker">Card Maker</string>
+    <string name="title_activity_settings">User Preferences</string>
+    <string name="mfss_header_displays">Display Preferences</string>
+    <string name="pref_title_social_recommendations">Hide Toolbar on Card View</string>
+    <string name="pref_description_social_recommendations">Hide the toolbar when viewing a card</string>
+    <string name="pref_title_add_friends_to_messages">Font size diff. between title and text</string>
+
+    <string-array name="pref_example_list_titles">
+        <item>1 - Smallest</item>
+        <item>2 - Small</item>
+        <item>3 - Medium</item>
+        <item>5 - Large</item>
+        <item>7 - Largest</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string name="pref_title_sync_frequency">Reminde me at this time</string>
+
+    <string-array name="pref_sync_frequency_titles">
+        <item>5:00 AM</item>
+        <item>5:30 AM</item>
+        <item>6:00 AM</item>
+        <item>6:30 AM</item>
+        <item>7:00 AM</item>
+        <item>8:00 AM</item>
+        <item>10:00 AM</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>500</item>
+        <item>530</item>
+        <item>600</item>
+        <item>630</item>
+        <item>700</item>
+        <item>800</item>
+        <item>1000</item>
+    </string-array>
+
+    <string name="mfss_header_reminders">Reminder Preferences</string>
+    <string name="pref_title_new_message_notifications">Remind me to check QOTD</string>
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="reminderTime">Reminder Time</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_sign_in">Sign in</string>
+    <string name="title_activity_sign_up">Sign Up</string>
+
+    <!-- Strings related to signin -->
+    <string name="prompt_signin_name">Email Address</string>
+    <string name="prompt_email_username">Email or Username</string>
+    <string name="prompt_firstname">First Name</string>
+    <string name="prompt_surname">Last Name</string>
+    <string name="prompt_username">username</string>
+    <string name="prompt_email_address">Email Address</string>
+    <string name="prompt_mobile">Mobile Phone</string>
+    <string name="prompt_signin_key">Password</string>
+    <string name="prompt_signin_key_confirm">Confirm Password</string>
+    <string name="action_signin">Sign in</string>
+    <string name="action_signup">Sign up</string>
+    <string name="action_signin_short">Sign in</string>
+    <string name="error_invalid_signin_name">This username is too short</string>
+    <string name="error_invalid_signin_email">This email address is invalid</string>
+    <string name="error_invalid_signin_key">This password is too short</string>
+    <string name="error_incorrect_signin_key">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="error_invalid_fname">This First Name is invalid</string>
+    <string name="error_invalid_sname">This Last Name is invalid</string>
+    <string name="error_invalid_username">This username is invalid</string>
+    <string name="error_invalid_mobile">This Mobile No is invalid</string>
+    <string name="title_item_list">Items</string>
+    <string name="title_item_detail">Item Detail</string>
+    <string name="title_activity_main">The Smart App</string>
+    <string name="title_activity_user_profile">User Profile</string>
+    <string name="just_amin">Just a minute...</string>
+    <string name="user_is_sure">Are you sure you want to sign out? You information will be backed up online till you signin again.</string>
+    <string name="button_yes">Yes</string>
+    <string name="button_no">No</string>
+    <string name="user_logged_out">You have been logged!</string>
+    <string name="user_can_sign">Now sign in!</string>
+    <string name="user_signout">Sign Out</string>
+    <string name="add_my_text">Write Some Text</string>
+    <string name="user_balance">0/=</string>
+    <string name="full_name">Full Name</string>
+    <string name="user_name">username</string>
+    <string name="lbl_since">Member since:</string>
+    <string name="user_since">a few secs ago</string>
+    <string name="lbl_email">Email:</string>
+    <string name="user_email">myname@email.com</string>
+    <string name="lbl_mobile">Mobile:</string>
+    <string name="user_mobile">0700000000</string>
+    <string name="card_title">Card Bla Bla</string>
+    <string name="menu_edit">Edit Card</string>
+    <string name="title_activity_user_payment">User Payment</string>
+
+</resources>

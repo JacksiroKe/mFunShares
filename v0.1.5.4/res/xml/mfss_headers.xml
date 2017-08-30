@@ -1,0 +1,12 @@
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- These settings headers are only used on tablets. -->
+
+    <header
+        android:fragment="com.jackson_siro.mfunshareshop.Settings$GeneralPreferenceFragment"
+        android:title="@string/mfss_header_displays" />
+    <header
+        android:fragment="com.jackson_siro.mfunshareshop.Settings$NotificationPreferenceFragment"
+        android:title="@string/mfss_header_reminders" />
+    
+</preference-headers>

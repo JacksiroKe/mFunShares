@@ -1,0 +1,9 @@
+<resources>
+    <color name="red">#F88017</color>
+	<color name="black">#000</color>
+	<color name="gray">#000</color>
+	
+	<color name="actionbar_title_color">#224894</color>
+    <color name="actionbar_background">#303f9f</color>
+    <color name="actionbar_text">#ffffff</color>
+</resources>

@@ -1,0 +1,29 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="mfss_reminder_on"
+        android:title="@string/pref_title_new_message_notifications" />
+
+    <RingtonePreference
+        android:defaultValue="content://settings/system/notification_sound"
+        android:dependency="mfss_reminder_on"
+        android:key="mfss_reminder_on_ringtone"
+        android:ringtoneType="notification"
+        android:title="@string/pref_title_ringtone" />
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:dependency="mfss_reminder_on"
+        android:key="mfss_reminder_on_vibrate"
+        android:title="@string/pref_title_vibrate" />
+        
+     <com.jackson_siro.mfunshareshop.tools.TimePreference
+		android:name="Default reimnder time"
+		android:dependency="mfss_reminder_on"
+        android:summary=""
+		android:dialogLayout="@layout/time_preference"
+		android:title="@string/pref_title_sync_frequency"
+		android:key="mfss_reminder_time" />  
+
+</PreferenceScreen>

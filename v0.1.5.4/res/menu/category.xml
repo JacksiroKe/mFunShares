@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.jackson_siro.vcardbook.cardView" >
+	
+	<item
+        android:id="@+id/toolbar"
+        android:title="Toolbar"
+        android:icon="@android:drawable/ic_menu_preferences"
+        app:showAsAction="always"/>
+		
+    <item
+        android:id="@+id/share"
+        android:title="Share Card"
+        android:icon="@android:drawable/ic_menu_share"
+        app:showAsAction="always"/>
+    
+</menu>
