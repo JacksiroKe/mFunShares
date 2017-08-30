@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:weightSum="2"
+    android:orientation="vertical" >
+
+	<RelativeLayout
+	    android:layout_weight="1.5"   
+       	android:layout_width="match_parent"
+       	android:layout_height="0dp">
+       	    			
+       	    <ImageView
+       	        android:id="@+id/myimage"
+				android:layout_width="match_parent"
+       	        android:layout_height="match_parent"
+       	        android:background="@drawable/textview_border"
+       	        android:padding="10dp"
+       	        android:contentDescription="my Image"
+       	        android:scaleType="fitXY"
+       	        android:adjustViewBounds="true"
+       	        android:src="@drawable/balloon" />
+
+       	    <EditText
+       	        android:layout_width="match_parent"
+       	        android:layout_height="wrap_content"
+       	        android:layout_alignParentBottom="true"
+       	        android:layout_alignParentLeft="true"
+       	        android:ems="10"
+       	        android:hint="@string/add_my_text"
+       	        android:padding="10dp"
+       	        android:layout_margin="10dp"
+            	android:textSize="22sp"
+				android:textStyle="bold"
+            	android:gravity="center_vertical" >
+
+       	        <requestFocus />
+       	    </EditText>
+
+	</RelativeLayout>
+</LinearLayout>

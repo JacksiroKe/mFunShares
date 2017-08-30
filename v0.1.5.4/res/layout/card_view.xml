@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+	android:background="#eee"
+    android:orientation="vertical" >
+	
+	<ScrollView
+		android:id="@+id/ScrollCard"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_above="@id/footer"
+		android:layout_below="@id/header" >
+		
+	    <LinearLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:weightSum="2"
+		    android:orientation="vertical" >
+		
+			<RelativeLayout
+			    android:layout_weight="1.5"   
+		       	android:layout_width="fill_parent"
+		       	android:layout_height="wrap_content">
+		       	
+					<ProgressBar
+						android:id="@+id/loading_progress"
+						style="?android:attr/progressBarStyleLarge"
+						android:layout_width="wrap_content"
+						android:layout_height="fill_parent"
+		       	        android:layout_centerHorizontal="true"
+		       	        android:layout_centerVertical="true"
+						android:layout_gravity="center"
+						android:layout_marginBottom="8dp"
+						android:gravity="center_horizontal"
+						android:visibility="gone" />
+				
+		       	    <ImageView
+		       	        android:id="@+id/card_image"
+		       	        android:layout_width="fill_parent"
+		       	        android:layout_height="fill_parent"
+		       	        android:layout_centerHorizontal="true"
+		       	        android:layout_centerVertical="true"
+		       	        android:background="@drawable/textview_border"
+		       	        android:contentDescription="Main Image"
+		       	        android:scaleType="fitXY"
+		       	        android:adjustViewBounds="true"
+		       	        android:src="@drawable/balloon" />
+		       	    
+			</RelativeLayout>
+		    
+			<RelativeLayout
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_marginBottom="0dp"
+			    android:layout_marginLeft="10dp"
+			    android:layout_marginRight="10dp"
+			    android:layout_marginTop="10dp"
+			    android:layout_weight="0.00" >
+		        
+			    <TextView             
+				    android:id="@+id/title"
+					android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/textview_border"
+		            android:padding="10dp"
+		            android:textSize="22sp"            
+		            android:text="@string/card_title"
+					android:textStyle="bold"
+		            android:gravity="center_vertical"/>
+			     
+			</RelativeLayout>
+			 
+			<RelativeLayout
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+				android:layout_marginBottom="20dp"
+			    android:layout_marginLeft="10dp"
+			    android:layout_marginRight="10dp"
+			    android:layout_marginTop="10dp"
+			    android:layout_weight="0.00" >
+		        
+			    <TextView             
+				    android:id="@+id/description"
+					android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/textview_border"
+		            android:padding="10dp"
+		            android:textSize="18sp"
+		            android:text="@string/card_description"
+		            android:gravity="center_vertical"/>
+			     
+			</RelativeLayout>
+		</LinearLayout>
+			    
+	</ScrollView>
+    
+</LinearLayout>

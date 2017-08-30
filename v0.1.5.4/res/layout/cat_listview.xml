@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="2dp" >
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:contentDescription="desc"
+        android:layout_gravity="center_vertical|center"
+        android:scaleType="centerCrop"
+        android:padding="10dp"
+        android:src="@drawable/ic_launcher" />
+	
+	<TextView
+	    android:id="@+id/text"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center"
+	    android:gravity="center_vertical"
+	    android:paddingTop="5dp"
+	    android:text="id"
+	    android:textColor="#000"
+	    android:textSize="22sp"
+	    android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/texti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/image"
+        android:paddingBottom="10dp"
+        android:text="title"      
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textStyle="bold"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textii"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/texti"
+        android:layout_below="@+id/texti"
+        android:text="content"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textSize="16sp" />
+
+</RelativeLayout>
